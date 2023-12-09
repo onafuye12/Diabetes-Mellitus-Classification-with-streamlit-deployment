@@ -6,7 +6,7 @@ import pickle
 from PIL import Image
 
 # Set page title and background color
-st.set_page_config(page_title='Diabetes Mellitus Classification', page_icon=':pill:', layout='wide', initial_sidebar_state='auto')
+st.set_page_config(page_title='Diabetes Mellitus Prediction', page_icon=':pill:', layout='wide', initial_sidebar_state='auto')
 
 # Set custom CSS styles
 st.markdown("""
@@ -42,7 +42,7 @@ nav_selection = st.sidebar.radio("Navigation", ["Home", "About Diabetes"])
 
 # Home page
 if nav_selection == "Home":
-    st.title('Diabetes Mellitus Classification')
+    st.title('Diabetes Mellitus Prediction')
     # Rest of your code for the home page
     
 # About Diabetes page
@@ -67,7 +67,7 @@ elif nav_selection == "About Diabetes":
     # Hide the input section
     st.stop()
 # Display title and image
-#st.markdown("<h1 class='title'>Diabetes Mellitus Classification</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 class='title'>Diabetes Mellitus Prediction</h1>", unsafe_allow_html=True)
 img = Image.open('image1.png')
 img = img.resize((700, 200))
 st.image(img, use_column_width=True)
