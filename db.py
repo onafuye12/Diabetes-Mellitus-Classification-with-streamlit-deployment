@@ -142,7 +142,7 @@ frame2 = prepare(frame)
 if st.button('Predict'):
     frame2 = prepare(frame)
     pred = model.predict(frame2)
-    if pred[0] == 0:
+    if pred[0] == 'Negative':
         st.markdown("<p class='prediction'>This individual does not have diabetes</p>", unsafe_allow_html=True)
     else:
         st.markdown("<p class='prediction'>This individual has diabetes</p>", unsafe_allow_html=True)
